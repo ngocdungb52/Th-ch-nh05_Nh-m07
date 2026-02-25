@@ -17,6 +17,6 @@ Repository này lưu trữ các kết quả của Bài thực hành 05. Mục ti
   * Âm thanh nền tải từ **FreeSound** (Giấy phép CC0).
 * **Công cụ thiết kế & Dựng phim:** Infographic tạo bởi **Canva AI (Magic Design)**; Video cắt ghép qua **CapCut**.
 
-## 5. Giấy phép bản quyền
+## 3. Giấy phép bản quyền
 Toàn bộ nội dung do sinh viên tạo ra trong repository này được phát hành dưới giấy phép **Creative Commons Attribution 4.0 International (CC BY 4.0)**. 
 Bạn có thể tự do chia sẻ và chỉnh sửa tài liệu này, với điều kiện phải ghi nhận tác giả gốc. Các tài nguyên bên thứ ba (hình ảnh, video, âm thanh) tuân thủ theo giấy phép CC0 gốc của tác giả.
