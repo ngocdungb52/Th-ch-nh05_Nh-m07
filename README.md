@@ -1,5 +1,6 @@
 # BÀI THỰC HÀNH 05: TẠO, QUẢN LÝ VÀ CHIA SẺ NỘI DUNG SỐ
 URl truy cập trang web bằng html:https://ngocdungb52.github.io/Th-ch-nh05_Nh-m07/
+
 Url file video:https://drive.google.com/file/d/19Gr0W7Ok0d3d1L9w4A6CuxQ-vBL95o-F/view?usp=sharing
 ## 1. Mô tả dự án
 Repository này lưu trữ các kết quả của Bài thực hành 05. Mục tiêu của bài thực hành là rèn luyện các kỹ năng số cơ bản và nâng cao trong bối cảnh học tập, bao gồm:
