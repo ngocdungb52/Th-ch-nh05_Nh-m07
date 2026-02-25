@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiển Thị Ảnh Dài và Video</title>
+    <style>
+        /* 1. Thiết lập cơ bản */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+            min-height: 100vh;
+            padding: 50px 20px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+            color: #2c3e50;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* 2. Bố cục xếp dọc (Flexbox Column) */
+        .content-container {
+            display: flex;
+            flex-direction: column; /* Ép các phần tử xếp từ trên xuống dưới */
+            align-items: center;    /* Căn giữa các thẻ */
+            gap: 40px;              /* Khoảng cách giữa ảnh và video */
+            max-width: 800px;       /* Độ rộng tối đa để không bị quá to trên máy tính */
+            margin: 0 auto;         /* Căn giữa toàn bộ vùng chứa */
+        }
+
+        /* 3. Thiết kế dạng thẻ (Card) */
+        .media-card {
+            background-color: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            width: 100%;            /* Chiếm trọn chiều rộng của container */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .media-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .media-header {
+            padding: 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .media-header h2 {
+            font-size: 1.2rem;
+            color: #34495e;
+            text-align: center;
+        }
+
+        /* 4. Định dạng Ảnh và Video hiển thị toàn bộ */
+        .media-content {
+            width: 100%;
+            /* ĐÃ XÓA aspect-ratio để chiều cao tự do */
+            background-color: #f9f9f9; /* Màu nền nhẹ nếu ảnh bị trong suốt */
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto; /* Quan trọng: Cho phép chiều cao tự động giãn theo ảnh thực tế */
+            /* ĐÃ XÓA object-fit: cover để ảnh không bị cắt xén */
+        }
+
+        video {
+            display: block;
+            width: 100%;
+            height: auto;
+            outline: none; /* Bỏ viền xanh khi click vào video trên một số trình duyệt */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Nội Dung Của Tôi</h1>
+
+    <div class="content-container">
+        
+        <div class="media-card">
+            <div class="media-header">
+                <h2>Infographic</h2>
+            </div>
+            <div class="media-content">
+                <img src="infographic.jpg" alt="Infographic">
+            </div>
+        </div>
+
+        <div class="media-card">
+            <div class="media-header">
+                <h2>Video AI</h2>
+            </div>
+            <div class="media-content">
+                <video controls>
+                    <source src="video_AI.mp4" type="video/mp4">
+                    Trình duyệt của bạn không hỗ trợ thẻ video.
+                </video>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
